@@ -67,7 +67,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(240, 245, 241, 0.1);
+      background-color: rgba(240, 245, 241, 0.9);
       /* This is sage-green-50 with 90% opacity */
     }
 
@@ -167,7 +167,7 @@
     </section>
 
     <section id="entourage" class="py-16 sm:py-20 px-2 relative section-bg">
-  
+   
       <div class="container mx-auto text-center relative">
         <h2 class="text-4xl font-bold text-sage-green-900 mb-4">
           Our Wedding Entourage
@@ -449,15 +449,15 @@
       </div>
   </section>
 
-  <section id="attire" class="py-16 sm:py-20 bg-sage-green-100 px-2 overflow-hidden relative section-bg"> 
+  <section id="attire" class="py-16 sm:py-20 bg-sage-green-100 px-2 overflow-hidden relative"> 
   
-    <div class="container mx-auto text-center relative">
+    <div class="container mx-auto text-center">
           <div class="animate-on-scroll">
               <h2 class="text-4xl font-bold text-sage-green-900 mb-4">Guest Attire</h2>
               <p class="text-center text-sage-green-700 mb-10 max-w-2xl mx-auto">To help you with your wardrobe choices, here is a little guide to our dress code. We can't wait to celebrate with you!</p>
           </div>
           
-          <div class="bg-white md:p-12 rounded-lg shadow-xl max-w-6xl mx-auto overflow-hidden">
+          <div class="bg-white md:p-12 rounded-lg shadow-xl max-w-6xl mx-auto border-t-4 border-sage-green-200 relative overflow-hidden">
               <div class="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
                   
                   <div class="text-center animate-on-scroll-left">
@@ -604,8 +604,8 @@
       </div>
     </section>
 
-    <section id="timeline" class="py-16 sm:py-20 px-2">
-      <div class="container mx-auto">
+    <section id="timeline" class="py-16 sm:py-20 px-2 shadow-xl">
+      <div class="container mx-auto ">
           <div class="text-center mb-12 animate-on-scroll">
               <h2 class="text-4xl font-bold text-sage-green-900">Order of Events</h2>
               <p class="text-sage-green-700 mt-2">Here's what to expect on our special day.</p>
@@ -749,6 +749,52 @@
         </div>
     </div>
 </section> -->
+<section id="share" class="py-12 sm:py-12 px-4  mx-auto relative section-bg">
+  <div class="text-center mb-12 animate-on-scroll">
+    <h2 class="text-4xl font-bold font-serif text-sage-green-900">Taking Pictures?</h2>
+    <p class="text-sage-green-700 mt-2">We'd love to see them!</p>
+</div>
+ 
+  <div class="container rounded-lg  max-w-2xl mx-auto text-center border-t-4 border-sage-green-200 relative ">
+      
+  
+      <div class="bg-white p-8 md:p-12 rounded-lg shadow-xl max-w-2xl mx-auto animate-on-scroll">
+        
+        <div class="mt-4 mb-5">
+          <img src="./assets/sharepic.jpg" alt="flower" class="w-full h-full mx-auto rounded-lg shadow-sm mx-auto border-2 border-sage-green-100 p-1">
+          
+      </div>
+         
+          <p class="mt-2 text-lg text-sage-green-700">Captured a sweet, silly, or stunning moment at the wedding?</p>
+          <p class="mt-2 text-lg text-sage-green-700">Don’t forget to include a short description—
+            Where was it? Who’s in it? What made it special? 💖
+            We can’t wait to relive the magic through your eyes!</p>
+          <hr class="my-6 border-t border-sage-green-200">
+
+          <p class="text-sm uppercase tracking-widest text-sage-green-600">Share your favorite shots with us using</p>
+          
+          <div class="mt-2 relative flex justify-center items-center">
+              <p id="hashtag" class="text-2xl font-bold text-sage-green-800 bg-sage-green-100 px-6 py-2 rounded-lg">#SamChaNaTalagaTo</p>
+              <button id="copy-btn" class="ml-2 bg-sage-green-200 text-sage-green-800 p-2 rounded-lg hover:bg-sage-green-300 transition-colors" title="Copy Hashtag">
+                  <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a2.25 2.25 0 0 1-2.25 2.25h-1.5a2.25 2.25 0 0 1-2.25-2.25v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184" />
+                  </svg>
+              </button>
+          </div>
+          <span id="copy-success" class="text-xs text-sage-green-500 opacity-0 transition-opacity">Copied!</span>
+
+          <div class="mt-8 flex justify-center gap-6">
+              <a href="https://www.instagram.com/" class="text-sage-green-500 hover:text-sage-green-700 transition-colors">
+                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.792 2.792c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-2.792 2.792c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-2.792-2.792c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 012.792-2.792c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zm0 2.421c-2.396 0-2.71 0-3.694.052-.97.044-1.504.207-1.928.372a2.463 2.463 0 00-1.46 1.46c-.165.424-.328.958-.372 1.928-.052.984-.052 1.299-.052 3.694s0 2.71.052 3.694c.044.97.207 1.504.372 1.928a2.463 2.463 0 001.46 1.46c.424.165.958.328 1.928.372.984.052 1.299.052 3.694.052s2.71 0 3.694-.052c.97-.044 1.504-.207 1.928-.372a2.463 2.463 0 001.46-1.46c.165-.424.328-.958.372-1.928.052-.984.052-1.299.052-3.694s0-2.71-.052-3.694c-.044-.97-.207-1.504-.372-1.928a2.463 2.463 0 00-1.46-1.46c-.424-.165-.958-.328-1.928-.372C15.026 4.434 14.71 4.42 12.315 4.42zm0 3.388a4.185 4.185 0 100 8.37 4.185 4.185 0 000-8.37zM12 14.81a2.81 2.81 0 110-5.62 2.81 2.81 0 010 5.62zm4.405-6.622a.96.96 0 100-1.92.96.96 0 000 1.92z" clip-rule="evenodd" /></svg>
+              </a>
+              <a href="https://www.facebook.com/?_rdr" class="text-sage-green-500 hover:text-sage-green-700 transition-colors">
+                  <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+              </a>
+          </div>
+      </div>
+  </div>
+</section>
+
 
 <section id="rsvp" class="py-16 sm:py-20 bg-sage-green-100 px-2 relative section-bg">
 
@@ -803,6 +849,8 @@
       </div>
   </div>
 </section>
+
+
 
   </main>
 
